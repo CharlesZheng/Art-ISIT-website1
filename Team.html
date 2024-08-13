@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Image/Art Logo.png" id="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Overview</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Team</h1>
+    </section>
+    <!-- Faciliities -->
+    <section class="facilities">
+      <h1>Senior Manager</h1>
+      <div class="row">  
+        <div class="facities-col-1">
+          <img src="Image/Angela.png" />
+          <h3>Angela Lam</h3>
+          <p>I am responsible for strategic planning, development, implementing, resourcing, and management of the Faculty of Arts Learning Technology Support Centre. I provide leadership in applying educational technology in designing and developing courses, curriculum, and other educational materials for instructors and programs in the Faculty of Arts.</p>
+        </div>
+    </section>
+
+    <!-- Faciliities -->
+    <section class="facilities">
+      <h1>Educational Technologist</h1>
+      <div class="row">
+        <div class="facities-col">
+          <img src="Image/Henry.png" />
+          <h3>Henry Hu</h3>
+          <p>My daily responsibilities include assisting faculty and instructors with technology-related issues and continuously innovating to provide the best and latest learning tools and technologies to enhance teaching and learning experiences.I also develop websites tailored to specific requests from different faculty members. Additionally, I create automated scripts and programs to help my team improve efficiency and save time.</p>
+        </div>
+        <div class="facities-col">
+          <img src="Image/Chris.png" />
+          <h3>Chris Jung</h3>
+          <p>I help the UBC teaching team use media and technology as a pedagogical tool for their courses. This can mean introducing instructors to new technology, assisting them with developing course content, or helping them solve a problem.</p>
+        </div>
+        <div class="facities-col">
+          <img src="Image/Sami.png" />
+          <h3>Asif Sami Haque</h3>
+          <p>I support instructors use, explore, and adopt learning technologies to help them teach their classes.
+          </p>
+        </div>
+      </div>
+      <a href="https://isit.arts.ubc.ca/news/?newsTag=&topic=&type=meet-the-team" class="hero-btn red-btn">
+        Explore more</a
+      >
+    </section>
+    <!-- Javascrip for menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

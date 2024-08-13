@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Image/Art Logo.png" id="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Overview</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+    <!-- About us content -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Arts ISIT</h1>
+          <p>
+            We take pride in providing exemplary technological support for the
+            administrative, teaching, and learning needs of Arts units. Working
+            collaboratively with other Arts and UBC support units, we strive to
+            connect you and your communities with technological solutions that
+            best meet your needs.
+          </p>
+          <h1>Job Descriptiopn</h1>
+          <p>
+            This position involves providing Tier 1 instructional support to
+            Arts faculty, including troubleshooting and training in educational
+            technologies, clear communication, task organization, and referrals
+            to Arts ISIT. Preference is given to candidates who can commit for
+            12 months. Training will be provided, but experience in customer
+            service, educational technologies, and strong communication skills
+            are required. Skills in technical writing, HTML/CSS, and multimedia
+            software are advantageous.
+          </p>
+          <a href="https://isit.arts.ubc.ca/about/" class="hero-btn red-btn">
+            Explore now</a
+          >
+        </div>
+        <div class="about-col">
+          <img src="Image/Sami teaching backgroud.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascrip for menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

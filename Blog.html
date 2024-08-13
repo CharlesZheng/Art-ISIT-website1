@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Image/Art Logo.png" id="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Overview</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Overview</h1>
+    </section>
+    <!-- Blog page content -->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="Image/Learning.jpg" />
+        </div>
+        <div class="blog-right">
+          <h3>Training</h3>
+          <div>
+            <span>Onboarding course</span>
+            <span>2 Weeks</span>
+          </div>
+          <div>
+            <span>Watch & Learn</span>
+            <span>1 Week</span>
+          </div>
+          <div>
+            <span>Start(Guide by Senior stuffs)</span>
+            <span>1 Week</span>
+          </div>
+          <div>
+            <span>Start(Check in with Angela per week)</span>
+            <span>2 Weeks</span>
+          </div>
+        </div>
+      </div>
+      <div class="blog-right">
+        <h3>What you will be doing</h3>
+        <div>
+          <span>Tickets (Email requests)</span>
+          <span>50%</span>
+        </div>
+        <div>
+          <span>Phone Call</span>
+          <span>10%</span>
+        </div>
+        <div>
+          <span>VDI (Zoom Online Drop In)</span>
+          <span>10%</span>
+        </div>
+        <div>
+          <span>Exam Support</span>
+          <span>5%</span>
+        </div>
+        <div>
+          <span>Project (Mainly second term)</span>
+          <span>25%</span>
+        </div>
+      </div>
+      <div class="blog-right">
+        <h3>Daily Work Flow</h3>
+        <div>
+          <span>Opening-daily setup & Clock in</span>
+          <span>9:00 -- 9:10 am</span>
+        </div>
+        <div>
+          <span>Log in Phone line & VDI</span>
+          <span>9:10 -- 9:15 am</span>
+        </div>
+        <div>
+          <span>Daily Work (Service now -ticket)</span>
+          <span>9:15 -- 9:59 am</span>
+        </div>
+        <div>
+          <span>Scrum Meeting</span>
+          <span>10:00 -- 10:20 am</span>
+        </div>
+        <div>
+          <span>Daildy Work</span>
+          <span>10:20 -- Break </span>
+        </div>
+        <div>
+          <span>Break</span>
+          <span>Any 1 hour between 11:30 -- 1:30 pm</span>
+        </div>
+        <div>
+          <span>Daily Work</span>
+          <span>Break -- 4:55 pm</span>
+        </div>
+        <div>
+          <span>Clean up</span>
+          <span>4:55 -- 5:00 pm</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascrip for menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

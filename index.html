@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="Image/Art Logo.png" id="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="project.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Overview</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>UBC Art ISIT Learning Centre</h1>
+        <p>
+          "Tech Solutions for Creative Minds: Enhancing Arts Education and
+          Innovation"
+        </p>
+        <a href="https://isit.arts.ubc.ca" class="hero-btn">To know More</a>
+      </div>
+    </section>
+    <!-- Services & Support-->
+    <section class="course">
+      <h1>Services & Support We Offer</h1>
+      <p>
+        "We offer the Arts community tailored services by understanding
+        professors unique needs and supporting them in a way that is effective
+        and meaningful."
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Learning Technology Support</h3>
+          <p>Troubleshooting</p>
+        </div>
+        <div class="course-col">
+          <h3>Course Design</h3>
+          <p>Consultation</p>
+        </div>
+        <div class="course-col">
+          <h3>Teaching & Learning Strategies</h3>
+          <p>Training</p>
+        </div>
+      </div>
+    </section>
+    <!-- campus -->
+    <section class="campus">
+      <h1>Knowledge & Skills</h1>
+      <p>
+        "Provide educational technology support and training to faculty,
+        ensuring effective communication, problem-solving, and efficient task
+        management."
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="Image/Charlesworking2.jpg" />
+          <div class="layer">
+            <h3>Communication Skills</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="Image/Trouble222.png" />
+          <div class="layer">
+            <h3>Troubleshooting</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="Image/IMG_1753.HEIC" />
+          <div class="layer">
+            <h3>Collaboration</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Facilities -->
+    <section class="facilities">
+      <h1>Faciliities</h1>
+      <p>
+        "From procurement to troubleshooting and optimization, we offer
+        comprehensive solutions tailored to UBC stuff's specific needs."
+      </p>
+      <div class="row">
+        <div class="facities-col">
+          <img src="Image/Canvas.png" />
+          <h3>Canvas</h3>
+          <p>
+            Canvas provides a secure, online classroom for each of your courses
+            at UBC. Your instructors may use Canvas to communicate, share course
+            materials, and assign learning activities. You can use features in
+            Canvas to help keep track of your work, collaborate with classmates,
+            and preview your grades.
+          </p>
+        </div>
+        <div class="facities-col facilities1">
+          <img src="Image/Clas.png" />
+          <h3>CLAS</h3>
+          <p>
+            CLAS is a web-based media player where you can record, share, manage
+            and annotate or comment on videos. It provides a space for
+            collaborative learning by allowing time-based annotations or
+            comments that create opportunities for peer review and instructor
+            feedback as well as self-reflection.
+          </p>
+        </div>
+        <div class="facities-col facilities1">
+          <img src="Image/Iclicker.png" />
+          <h3>iClicker</h3>
+          <p>
+            iClicker Cloud is an online student response system that allows you
+            to respond to polls and quizzes during a class session, using your
+            computer or mobile device. When you answer questions, your
+            instructor receives your responses instantly and may share the
+            results and the correct answers during the class session or
+            afterward.
+          </p>
+        </div>
+      </div>
+      <a
+        href="https://lthub.ubc.ca/guides/canvas-student-guide/"
+        class="hero-btn red-btn btn"
+      >
+        Explore more</a
+      >
+      <a
+        href="https://lthub.ubc.ca/guides/iclicker-cloud-student-guide/"
+        class="hero-btn red-btn btn1"
+      >
+        Explore more</a
+      >
+      <a
+        href="https://scarfedigitalsandbox.teach.educ.ubc.ca/clas-collaborative-learning-annotation-system/"
+        class="hero-btn red-btn btn2"
+      >
+        Explore more</a
+      >
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta">
+      <h1>Please contact us if you are intereted</h1>
+      <a href="contact.html" class="hero-btn"> CONTACT ME</a>
+    </section>
+
+    <!-- Javascrip for menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
